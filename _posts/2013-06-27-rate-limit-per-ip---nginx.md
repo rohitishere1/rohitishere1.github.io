@@ -14,7 +14,7 @@ Request limit per ip in Nginx
 Nginx is a very popular server and over the time people have devised ingenious ways of customizing the performance and security. I am just going to discuss one of the way to enhance security of Nginx so as to prevent Dos attack. We are going to limit number of requests per ip.
 In Nginx 0.8.18 and above you have module `HttpLimitReqModule`, implementation as follows.
 In Nginx config (usually at the path `/etc/nginx/nginx.conf`)
-```
+{% highlight bash %}
 	http{
 		..
 			limit_req_zone $binary_remote_addr  zone=test1:10m   rate=5r/s;
@@ -24,7 +24,7 @@ In Nginx config (usually at the path `/etc/nginx/nginx.conf`)
 			limit_req zone=test1 burst=10 nodelay;
 		..
 		}
-```
+{% endhighlight %}
 
 **limit_req_zone** has context http and is basically a directive. From above, it gives a directive that a 10 Mb zone,test1, is allocated to handle sessions and average speed for an ip is limited to 5 requests per second.
 
@@ -33,7 +33,7 @@ In Nginx config (usually at the path `/etc/nginx/nginx.conf`)
 Well now if in real world the things were as straight forward, the lessson would have been over, but they are not, so we would discuss how to rate limit the requests per ip with whitelisting.
 
 Here is the implementation:
-```
+{% highlight bash %}
 	http{
 		..
 			geo $mywhitelist {
@@ -49,7 +49,7 @@ Here is the implementation:
 		..
 			limit_req_zone $req_limit_zone=mywhitelist:10m rate=5r/s;
 			limit_req zone= mywhitelist burst=10 nodelay;
-```
+{% endhighlight %}
 
 So, from above config, with the use of geo from HttpGeoModule, helps you render based on geo location context, we create a custom map where we assign address to request zone or blank string, so as to disable the rule, so now this is as simple as it looks.
 
