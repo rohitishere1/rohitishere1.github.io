@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Expressions
-tagline: freedom of speech
+title: Freedom of Speech
+tagline: Expressions of self!
 ---
 **My Blogs**
 

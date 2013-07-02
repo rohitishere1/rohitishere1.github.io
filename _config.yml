@@ -9,13 +9,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Rohit Singh Blog
-tagline: My Blog
+title : Expressions
+tagline: Freedom of Speech
 author :
   name : Rohit Singh
   email : rohitishere1@gmail.com
   github : rohitishere1
-  #twitter : rohitishere1
+  twitter : rohitishere1
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
