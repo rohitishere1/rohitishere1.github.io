@@ -3,7 +3,6 @@ layout: page
 title: Expressions
 tagline: freedom of speech
 ---
-{% include JB/setup %}
 **My Blogs**
 
 <ul class="posts">

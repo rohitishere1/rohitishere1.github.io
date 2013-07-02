@@ -6,8 +6,6 @@ category:
 tags: []
 ---
 
-{% include JB/setup %}
-
 Request limit per ip in Nginx
 =============================
 
