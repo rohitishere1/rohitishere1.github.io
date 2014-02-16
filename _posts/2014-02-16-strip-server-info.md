@@ -50,6 +50,6 @@ jar uf catalina.jar org/apache/catalina/util/ServerInfo.properties
  
 Restart server for changes to take effect.
 
-` P.S. one of possible issue that can be faced post this changes is,
- some test scripts or probes that identify server version may not work. ` 
+` P.S. one of possible issue that can be faced post this changes is, `
+` some test scripts or probes that identify server version may not work. ` 
 
