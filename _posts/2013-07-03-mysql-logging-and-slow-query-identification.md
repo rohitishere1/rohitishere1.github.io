@@ -2,7 +2,6 @@
 layout: post
 title: "Mysql Logging"
 description: "Mysql logging for debugging and slow query logging and identification"
-category: "database" 
 tags: ["Mysql","database","logging","slow query logging"]
 ---
 
