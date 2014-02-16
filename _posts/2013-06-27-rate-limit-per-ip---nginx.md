@@ -2,7 +2,7 @@
 layout: post
 title: "rate limit per ip   nginx"
 description: "rate limiting per ip nginx"
-category:server 
+category: "server" 
 tags: ["nginx","server","rate limit", "server security"]
 ---
 
