@@ -2,7 +2,6 @@
 layout: post
 title: "HTTP Compression"
 description: "About HTTP Compression, and enabling it in NGINX and Tomcat servers"
-category: "server"
 tags: ["nginx","server","Tomcat", "HTTP"]
 ---
 HTTP Compression
