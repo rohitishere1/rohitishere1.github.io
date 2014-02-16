@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "rate limit per ip   nginx"
-description: ""
-category: 
-tags: []
+description: "rate limiting per ip nginx"
+category:server 
+tags: [nginx,server,rate limit, server security]
 ---
 
 Request limit per ip in Nginx
