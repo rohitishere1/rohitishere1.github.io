@@ -2,7 +2,7 @@
 layout: post
 title: "Tikona Quick Pay"
 description: "Bill payment of Tikona ISP made easy"
-category: "general" 
+category: "general"
 tags: ["Tikona","ISP","Payment"]
 ---
 TIKONA ISP BILL PAY MADE EASY
