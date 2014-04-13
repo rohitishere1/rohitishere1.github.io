@@ -10,7 +10,7 @@ TIKONA ISP BILL PAY MADE EASY
 
 I use Tikona ISP for home use. And somehow, I find its bill payment process clumsy. Ironically they spend a good sum in sending reminders in form of sms and auto-tele-calls.
 
-Lets get to Bill Payment,
+Lets get to Bill Payment, we would try to demystify it today and make it quick ;)
 
 - 1: Go to url http://tikona.in/for-home/customer-support/tikona-care/quick-bill-pay/
 
