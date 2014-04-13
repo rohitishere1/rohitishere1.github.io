@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tikona Quick Pay"
-description: "Bill pament of Tikona ISP made easy"
+description: "Bill payment of Tikona ISP made easy"
 category: "general" 
 tags: ["Tikona","ISP","Payment"]
 ---
