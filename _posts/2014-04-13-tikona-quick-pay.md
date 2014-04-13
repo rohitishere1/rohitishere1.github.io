@@ -23,8 +23,6 @@ Lets get to Bill Payment,
 5. url is of format http://113.193.1.92:8080/QuickPay/SendInvoke.do?valetId=onlinepay2&password=prod_7498pay2&serviceId=<User Id>&amt=<Amount>&tdnTranId=<Transaction Id>&vrchName=null
 The transaction id above is same from step 2. Just paste the url in browser and press enter.
 
-![Tikona Transaction Id](/img/tikona2.jpg)
-
 6. Post step 5. It opens payment options and you can complete the cycle.
 
 For the want of transaction id from step-2 the process would have been shorter, but the site uses csrf tokens so atleast u need to load the page once.
