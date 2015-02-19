@@ -44,7 +44,7 @@ Here is the implementation:
             0   "";
         }
         ..
-        limit_req_zone $req_limit_zone=mywhitelist:10m rate=5r/s;
+        limit_req_zone $req_limit_zone zone=mywhitelist:10m rate=5r/s;
         limit_req zone= mywhitelist burst=10 nodelay;
         ..
 {% endhighlight %}
