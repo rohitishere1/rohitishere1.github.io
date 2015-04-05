@@ -21,7 +21,7 @@ go to required server module in your nginx configurations, and define the rules 
 
         location /abc/xyz/ {
                 proxy_set_header Host my.host.net;
-                proxy_pass https://my.host.net/pqr; # here the request would be redirected to https://my.host.net/pqr/abc/xyz/
+                proxy_pass https://my.host.net/pqr$request_uri; # here the request would be redirected to https://my.host.net/pqr/abc/xyz/
         }
 ####################################################
 {% endhighlight %}
