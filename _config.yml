@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title :typeof NaN
+title : typeof NaN
 tagline: My Experiments with Tech
 author :
   name : Rohit Singh
