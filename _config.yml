@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Expressions
-tagline: Freedom of Speech
+title : Rohit Blog
+tagline: My Experiments with Tech
 author :
   name : Rohit Singh
   email : rohitishere1@gmail.com
