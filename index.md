@@ -3,7 +3,7 @@ layout: page
 title: My Experiments with Tech
 tagline: my tech world
 ---
-**Posts**
+**My two Bytes**
 
 <ul class="posts">
   {% for post in site.posts %}
