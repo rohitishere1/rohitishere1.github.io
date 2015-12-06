@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Freedom of Speech
-tagline: Expressions of self!
+title: My Experiments with Tech
+tagline: my tech world
 ---
-**My Blogs**
+**Posts**
 
 <ul class="posts">
   {% for post in site.posts %}
