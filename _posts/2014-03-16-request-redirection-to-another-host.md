@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Request redirection to another host"
-description: "request redirection to another host on an nginx sever"
+description: "Request redirection to another host on an nginx sever"
 category: "server"
 tags: ["server","Nginx","request","redirection"]
 ---
@@ -10,7 +10,7 @@ REQUEST REDIRECTION
 
 Sometimes it might be required that a request has to be redirected to another host, and that too if the request is a POST request, simple request redirection won't work there. A better way of doing it on Nginx is described below, by this way, you would be able to redirect all kinds of requests, to required host.
 
-go to required server module in your nginx configurations, and define the rules as below,
+Go to required server module in your nginx configurations, and define the rules as below,
 
 {% highlight nginx %}
 ################### REDIRECTIONS  ###########################
@@ -23,7 +23,7 @@ go to required server module in your nginx configurations, and define the rules 
                 proxy_set_header Host my.host.net;
                 proxy_pass https://my.host.net/pqr$request_uri; # here the request would be redirected to https://my.host.net/pqr/abc/xyz/
         }
-####################################################
+#############################################################
 {% endhighlight %}
 
 By this example, you would be able to redirect any HTTP request, to the required host on the request url, your request data is preserved. After making changes you need to reload server config for the changes to take effect.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "strip server info"
-description: "stripping server info from response headers"
+title: "Strip server info"
+description: "Stripping server info from response headers"
 category: "server" 
 tags: ["server","Nginx","Tomcat","response","security"]
 ---

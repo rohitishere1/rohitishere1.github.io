@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "play with locate"
-description: "a minor tweak with locate which one might require"
+title: "Play with locate"
+description: "A minor tweak with locate which one might require"
 category: "OS"
 tags: ["OS","Linux","MacOS"]
 ---
