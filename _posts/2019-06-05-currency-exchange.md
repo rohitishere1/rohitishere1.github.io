@@ -10,7 +10,7 @@ Currency exchange and dealing with them during split payments
 =============================================================
 
 Dealing with currency exchange is always tricky but it can not be avoided in circumstances especially when your product has to be scaled in multiple geographies. Let's discuss on how to deal with one such case.
-In this use case, consider we are trying to charge a United States currency-account (USD) in Indian Ruppee (INR).
+In this use case, consider we are trying to charge a United States Dollars currency-account (USD) in Indian Rupee (INR).
 
 {% highlight bash %}
 Base charge amount = 100 INR
@@ -36,7 +36,7 @@ So, with the forward and back calculations we are having a difference of 0.30 IN
 
 To tackle this situation we  will first need to decide on rounding off policy when doing currency conversions initially, either we go with rounding up or rounding down. But to decide on which policy to use we need to have the context of use-case, for example, if I am doing this for setting price of an article, I would chose round up policy or else this will be another cost or loss, but if I am doing this for case like split payment where I wish to exhaust balance of an account, I would use round down or else I might end up with accounts with negative balances. After doing this we use these amounts accordingly for calculations (I call them significant amounts).
 
-Let's visualise how this works,
+Let's visualize how this works,
 {% highlight bash %}
 Base charge amount = 100 INR
 Exchange rate = 69.6537 (USD to INR)
@@ -45,7 +45,7 @@ After rounding down as discussed, 1.43 USD
 
 Now, our final charge
 in USD = 1.43 USD
-in INR = (1.43 * 69.6537) = 99.6047 ~ 99.60 INR (we can use use rounding policies like round up or round half up here)
+in INR = (1.43 * 69.6537) = 99.6047 ~ 99.60 INR (we can use rounding policies like round up or round half up here)
 {% endhighlight %}
 
 This means our charge amount has to 99.60 INR and not 100 INR, as it will not convert to a significant amount in USD.
