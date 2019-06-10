@@ -6,8 +6,8 @@ category: "general"
 tags: ["currency exchange", "split payments", "Java"]
 ---
 
-Currency exchange and dealing with them during split payments
-=============================================================
+Currency exchange and dealing with them during cases like split payments
+========================================================================
 
 Dealing with currency exchange is always tricky but it can not be avoided in circumstances especially when your product has to be scaled in multiple geographies. Let's discuss on how to deal with one such case.
 In this use case, consider we are trying to charge a United States Dollars currency-account (USD) in Indian Rupee (INR).
