@@ -12,7 +12,7 @@ Sometimes it might be required that a request has to be redirected to another ho
 
 go to required server module in your nginx configurations, and define the rules as below,
 
-{% highlight bash %}
+{% highlight nginx %}
 ################### REDIRECTIONS  ###########################
         location /xyz/index.html {
                 proxy_set_header Host your.required.host.com;

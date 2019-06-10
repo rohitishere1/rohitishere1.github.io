@@ -11,7 +11,7 @@ Request limit per ip in Nginx
 Nginx is a very popular server and over the time people have devised ingenious ways of customizing the performance and security. I am just going to discuss one of the way to enhance security of Nginx so as to prevent Dos attack. We are going to limit number of requests per ip.
 In Nginx 0.8.18 and above you have module `HttpLimitReqModule`, implementation as follows.
 In Nginx config (usually at the path `/etc/nginx/nginx.conf`)
-{% highlight bash %}
+{% highlight nginx %}
     http{
         ..
             limit_req_zone $binary_remote_addr  zone=test1:10m   rate=5r/s;
@@ -30,7 +30,7 @@ In Nginx config (usually at the path `/etc/nginx/nginx.conf`)
 Well now if in real world the things were as straight forward, the lessson would have been over, but they are not, so we would discuss how to rate limit the requests per ip with whitelisting.
 
 Here is the implementation:
-{% highlight bash %}
+{% highlight nginx %}
     http{
         ..
         geo $mywhitelist {

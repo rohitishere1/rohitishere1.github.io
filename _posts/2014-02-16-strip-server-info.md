@@ -15,7 +15,7 @@ Have you ever wondered, what information you are giving away in response to each
 just go to ` /etc/nginx/nginx.conf `
 and in http module, search for server_tokens, if not present add it.
 
-{% highlight bash %}
+{% highlight nginx %}
 # hide nginx version in res headers
 server_tokens off;
 {% endhighlight %}
@@ -27,7 +27,7 @@ Just reload/restart Nginx for this configuration to come into effect. This disab
 
 To hide server version in Tomcat, add ` server ` keyword in your ` Connector ` tag in ` CATALINA_HOME/conf/server.xml `, illustrated below
 
-{% highlight bash %}
+{% highlight apache %}
 <Connector port="8080" ...
             server="Apache" />  <!-- server header is now Apache -->
 {% endhighlight %}
@@ -50,6 +50,5 @@ jar uf catalina.jar org/apache/catalina/util/ServerInfo.properties
  
 Restart server for changes to take effect.
 
-` P.S. one of possible issue that can be faced post this changes is, `
-` some test scripts or probes that identify server version may not work. ` 
+` P.S. one of possible issue that can be faced post this changes is, some test scripts or probes that identify server version may not work. ` 
 

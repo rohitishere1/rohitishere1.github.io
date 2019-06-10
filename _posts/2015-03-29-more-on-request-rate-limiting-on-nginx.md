@@ -10,7 +10,7 @@ REQUEST RATE LIMITING
 
 I wanted to cover more on request rate limiting than I had last time. I had covered [rate limiting per ip and white-listing](http://rohitishere1.github.io/2013/06/27/rate-limit-per-ip---nginx/). But what if you had to limit the overall requests being served. Imagine a case where my server is working happily at 30 requests per second and it could survive the load of 100 requests per second, suddenly gets 120 requests per second for some fraction of time, it could potentially put the service on un-recoverable loss. A minor spurt of requests for a fraction of time could be lethal, unless we handle it gracefully, so in that case we put a limit on overall requests being served. Sample config below.
 
-{% highlight bash %}
+{% highlight nginx %}
         ..
             limit_req_zone $server_name  zone=test1:10m   rate=5r/s;
         ..
@@ -25,7 +25,7 @@ I am chosing server name as the key since I wish to limit the number of requests
 
 Now, if I wish to have rate limiting on any particular url, I would just specify a different location for it and specify rate limit for it. Sample config below,
 
-{% highlight bash %}
+{% highlight nginx %}
         ..
             limit_req_zone $server_name  zone=test1:10m   rate=5r/s;
         ..
