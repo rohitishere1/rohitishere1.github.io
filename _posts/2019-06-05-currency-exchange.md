@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "significant amounts in currency exchange"
-description: "dealing with currency exchange in converting to and from and dealing with split payments"
+description: "dealing with currency exchange in converting to and from during cases like split payments"
 category: "general"
 tags: ["currency exchange", "split payments", "Java"]
 ---
