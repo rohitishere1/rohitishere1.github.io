@@ -3,7 +3,7 @@ layout: post
 title: "significant amounts in currency exchange"
 description: "dealing with currency exchange in converting to and from and dealing with split payments"
 category: "general"
-tags: ["currency exchange", "split payments"]
+tags: ["currency exchange", "split payments", "Java"]
 ---
 
 Currency exchange and dealing with them during split payments
@@ -32,9 +32,9 @@ After rounding off
 Final refund amount = 100.30 INR
 {% endhighlight %}
 
-So, with the forward and back calculations we are having a difference of 0.30 INR and this will grow big with different amounts and number of transactions and if split payments is involved it gets more complex. And with all this the finance and accounting person responsible to balance the sheets is going to be very unhappy, along with the customer who spots this discrepancies.
+So, with the forward and back calculations we are having a difference of 0.30 INR and this will grow big with different amounts and number of transactions and if split payments is involved it gets more complex. And with all this, the finance and accounting people responsible to balance the sheets are going to be very unhappy, along with the customer who spots this discrepancies.
 
-To tackle this situation we  will first need to decide on rounding off policy when doing currency conversions initially, either we go with rounding up or rounding down. But to decide on which policy to use we need to have the context of use-case, for example, if I am doing this for setting price of an article, I would chose round up policy or else this will be another cost or loss, but if I am doing this for case like split payment where I wish to exhaust balance of a account, I would use round down or else I might end up with accounts with negative balances. After doing this we use the amount accordingly for calculations.
+To tackle this situation we  will first need to decide on rounding off policy when doing currency conversions initially, either we go with rounding up or rounding down. But to decide on which policy to use we need to have the context of use-case, for example, if I am doing this for setting price of an article, I would chose round up policy or else this will be another cost or loss, but if I am doing this for case like split payment where I wish to exhaust balance of an account, I would use round down or else I might end up with accounts with negative balances. After doing this we use these amounts accordingly for calculations.
 
 Let's visualise how this works,
 {% highlight bash %}
@@ -48,7 +48,7 @@ in USD = 1.43 USD
 in INR = (1.43 * 69.6537) = 99.6047 ~ 99.60 INR (we can use use rounding policies like round up or round half up here)
 {% endhighlight %}
 
-this means our charge amount has to 99.60 INR and not 100 INR, as it will not convert to a significant amount in USD.
+This means our charge amount has to 99.60 INR and not 100 INR, as it will not convert to a significant amount in USD.
 
 A sample code snippet in Java on how to get those converted values,
 
