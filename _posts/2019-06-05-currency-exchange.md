@@ -65,4 +65,4 @@ public static ImmutablePair<BigDecimal, BigDecimal> calculateChargesinCurrencies
     }
 {% endhighlight %}
 
-This approach will bring down above discussed discrepancies significantly. However this gets more complex when we consider partial refunds, will discuss those in my next post.
+This approach will bring down above discussed discrepancies significantly. However this gets more complex when we consider partial refunds, also there are ways to do these calculations with more accuracy, will discuss those in my followup posts.
