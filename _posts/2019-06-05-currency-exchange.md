@@ -26,7 +26,7 @@ So, lets try winding back to do refund.
 
 {% highlight text %}
 Refund amount = 1.44 USD
-Exchange rate = 69.6537 (USD to SKW)
+Exchange rate = 69.6537 (USD to INR)
 Converted refund amount = (1.44 * 69.6537) = 100.3013 INR
 After rounding off
 Final refund amount = 100.30 INR
